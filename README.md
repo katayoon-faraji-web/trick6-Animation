@@ -1,7 +1,6 @@
 # trick6
 
-
-
+https://github.com/katayoon-faraji-web/trick6/assets/144775981/a8ffdc3e-4dd4-4806-9be8-9a9809408933
 
 - [Demo Project](https://katayoon-faraji-web.github.io/trick6/)
 
