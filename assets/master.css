@@ -1,0 +1,299 @@
+body > ul {
+  width: 700px;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > ul > li {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(189, 187, 187, 0.543);
+  transition: 0.4s;
+}
+body > ul > li:hover {
+  background-color: rgb(45, 45, 45);
+  transform: scale(1.2);
+}
+body > ul > li > a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 17px;
+}
+body > main {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+body > main > section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body > main > section > h1 {
+  font-size: 7vw;
+  color: white;
+  overflow: hidden;
+}
+body > main > section > h1:nth-of-type(1) {
+  left: 20%;
+  top: 35%;
+}
+body > main > section > h1:nth-of-type(2) {
+  left: 25%;
+  top: 50%;
+}
+body > main > section > .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(0.8px);
+          backdrop-filter: blur(0.8px);
+}
+body > main > section > .filter > h2 {
+  font-size: 15vw;
+  color: rgba(87, 87, 87, 0.121);
+  position: absolute;
+}
+body > main > section > .filter > h2:nth-of-type(1) {
+  top: 10%;
+  left: 5%;
+}
+body > main > section > .filter > h2:nth-of-type(2) {
+  top: 52%;
+  left: 23%;
+}
+body > main > section > span {
+  width: 250px;
+  height: 40px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  left: 30%;
+  top: 80%;
+  font-size: 20px;
+  font-variant-caps: all-small-caps;
+  color: white;
+  padding: 0px 10px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+body > main > section > span:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+body > main > section > div {
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  z-index: 3.5;
+  filter: contrast(1.75);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 18% 90%, 18% 0, 81% 0, 81% 85%, 15% 85%, 0 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 18% 90%, 18% 0, 81% 0, 81% 85%, 15% 85%, 0 100%, 100% 100%, 100% 0%);
+}
+body > main > section:nth-of-type(1) {
+  background-image: url(img/1.jpg);
+  background-size: cover;
+  z-index: 3;
+  animation: page1 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(1) > h1 {
+  animation: text1 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(1) > div {
+  background-image: url(img/1\ -\ Copy.jpg);
+  background-size: cover;
+  animation: div1 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(1) > * {
+  position: absolute;
+  z-index: 3.5;
+}
+body > main > section:nth-of-type(2) {
+  background-image: url(img/2.jpg);
+  background-size: cover;
+  z-index: 2;
+  animation: page2 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(2) > h1 {
+  animation: text2 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(2) > div {
+  background-image: url(img/2.jpg);
+  background-size: cover;
+  animation: div2 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(2) > * {
+  position: absolute;
+  z-index: 2.5;
+}
+body > main > section:nth-of-type(3) {
+  background-image: url(img/3.jpg);
+  background-size: cover;
+  z-index: 1;
+  animation: page3 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(3) > h1 {
+  animation: text3 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(3) > div {
+  background-image: url(img/3.jpg);
+  background-size: cover;
+  animation: div3 10s linear infinite alternate;
+}
+body > main > section:nth-of-type(3) > * {
+  position: absolute;
+  z-index: 1.5;
+}
+
+@keyframes page1 {
+  30% {
+    left: 0;
+  }
+  40% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes page2 {
+  30% {
+    left: 0;
+  }
+  60% {
+    left: 0;
+  }
+  70% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes page3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes text1 {
+  25% {
+    height: 200px;
+  }
+  30% {
+    height: 0;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes text2 {
+  35% {
+    height: 0;
+  }
+  40% {
+    height: 200px;
+  }
+  55% {
+    height: 200px;
+  }
+  60% {
+    height: 0;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes text3 {
+  30% {
+    height: 0;
+  }
+  70% {
+    height: 0;
+  }
+  75% {
+    height: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@keyframes div1 {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+  5% {
+    left: 10%;
+    opacity: 1;
+  }
+  25% {
+    left: 10%;
+    opacity: 1;
+  }
+  30% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes div2 {
+  35% {
+    left: 40%;
+    opacity: 0;
+  }
+  40% {
+    left: 10%;
+    opacity: 1;
+  }
+  55% {
+    left: 10%;
+    opacity: 1;
+  }
+  60% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes div3 {
+  30% {
+    left: 40%;
+    opacity: 0;
+  }
+  70% {
+    left: 40%;
+    opacity: 0;
+  }
+  75% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    left: 10%;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=master.css.map */
